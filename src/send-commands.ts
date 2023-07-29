@@ -6,16 +6,16 @@ export function sendCommands(
   currentPosition: Position
 ): Position {
   switch (command) {
-    case "N":
+    case "n":
       console.log("Moving North");
       return moveNorth(currentPosition);
-    case "S":
+    case "s":
       console.log("Moving South");
       return moveSouth(currentPosition);
-    case "E":
+    case "e":
       console.log("Moving East");
       return moveEast(currentPosition);
-    case "W":
+    case "w":
       console.log("Moving West");
       return moveWest(currentPosition);
     default:

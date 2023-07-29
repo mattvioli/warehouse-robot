@@ -1,6 +1,5 @@
 import { Position } from "./types";
-
-const WAREHOUSE_EDGE = 12;
+import { WAREHOUSE_EDGE } from "./consts";
 
 export function drawWarehouse(robotPosition: Position): void {
   const warehouse: string[][] = [];

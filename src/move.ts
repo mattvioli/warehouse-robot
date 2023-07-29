@@ -1,7 +1,8 @@
+import { WAREHOUSE_EDGE } from "./consts";
 import { Position } from "./types";
 
 export function isValidMove(x: number, y: number): boolean {
-  return x >= 1 && x < 11 && y >= 1 && y < 11;
+  return x >= 1 && x < WAREHOUSE_EDGE - 1 && y >= 1 && y < WAREHOUSE_EDGE - 1;
 }
 
 export function moveEast(position: Position): Position {
