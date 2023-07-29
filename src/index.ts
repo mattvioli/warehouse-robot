@@ -16,7 +16,7 @@ export function promptForCommands(robotPosition: Position) {
     'Enter commands for the robot (e.g., "N E S W"), or Q to quit: ',
     (commands) => {
       let newPosition = robotPosition;
-      if (commands.toLowerCase() === "q") {
+      if (commands.toLocaleLowerCase() === "q") {
         rl.close();
         return;
       }
@@ -24,7 +24,7 @@ export function promptForCommands(robotPosition: Position) {
       const commandsArray = commands.split(" ");
 
       for (const command of commandsArray) {
-        newPosition = sendCommands(command, newPosition);
+        newPosition = sendCommands(command.toLocaleLowerCase(), newPosition);
         drawWarehouse(newPosition);
       }
 
