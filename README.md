@@ -4,7 +4,7 @@ Hello, welcome to our warehouse robot interface.
 
 With this, you will be able to send commends as a string such as "N E S W" to our robot.
 
-They will then move around the 10x10 warehouse. Unfortunately, we don't have the budget for bigger warehouses at the moment.
+The robot will then move around the 10x10 warehouse. Unfortunately, we don't have the budget for bigger warehouses at the moment.
 
 ## Getting Started
 
